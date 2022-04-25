@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thatiana Simão - Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-projects.css">
+    <link rel="shortcut icon" href="material/monogramsmallblack.png" type="image/x-icon">
+</head>
+<body>
+    <nav id="nav">
+        <ul id="nav-ul">
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="aboutme.html">About Me</a></li>          
+        </ul>
+        <img src="material/navbutton.png" alt="">
+    </nav>
+    <section id="main">
+        <div id="container">
+            <h1>My Projects</h1>
+            <div class="slideshow-container">
+                <div class="myProjects fade">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="material\bakingdreamP.png">
+                        <img src="material/bakingdreamM.png">
+                    </picture>
+                    <div class="caption"><a href="https://ninawire.github.io/bakingdreams/" target="_blank">Baking Dream</a></div>
+                </div>
+                <div class="myProjects fade">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="material\cheatsheetP.png">
+                        <img src="material/cheatsheetM.png">
+                    </picture>
+                    <div class="caption"><a href="https://ninawire.github.io/cheatsheet/" target="_blank">Cheatsheet</a></div>
+                </div>
+                <div class="myProjects fade">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="material\pumpmeP.png">
+                        <img src="material/pumpmeM.png">
+                    </picture>
+                    <div class="caption"><a href="https://ninawire.github.io/pumpme/" target="_blank">PumpMe</a></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+</body>
+<script src="script/script.js"></script>
+</html>

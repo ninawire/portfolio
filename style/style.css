@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@300&family=Tapestry&display=swap');
+
+:root {
+    --color1:#F3EAC0;
+    --color2: #DC9750;
+    --color3: #922C40;
+    --color4: #1E2640;
+
+    --font1: 'Open Sans', sans-serif;;
+    --font2: 'Josefin Sans', sans-serif;;
+    --font3: 'Tapestry', cursive;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3 {
+    font-family: var(--font1);
+    font-size: 1.5em;
+}
+
+p {
+    font-family: var(--font1);
+    font-size: 1.4em;
+    padding: 20px;
+}
+
+#main {
+    background: var(--color3) url(../material/backgroundfull.png) center center no-repeat;
+    height: 100vh;
+}
+
+nav {
+    background-color: transparent;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 100vw;
+    justify-items: center;
+    align-items: center;
+}
+
+nav:hover #nav-ul {
+    display: block;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    font-family: var(--font2);
+    color: var(--color1);
+    font-size: 28px;
+}
+
+#nav-ul {
+    display: none;
+}
+
+#nav-ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#container {
+    background-color: var(--color1);
+    width: 80vw;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    color: var(--color4);
+    text-align: center;
+}
+
+#mypic {
+    width: 200px;
+    border-radius: 300px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 10%;
+}
+
+#container figcaption {
+    position: relative;
+    top: 15%;
+    font-family: var(--font2);
+    font-size: 35px;
+}
+
+#container h2 {
+    position: relative;
+    top: 20%;
+    font-family: var(--font1);
+}
+
+.contacts {
+    padding: 20px;
+    width: 33%;
+    max-width: 100px;
+}
+
+.skills {
+    padding: 20px;
+    width: 15%;
+    max-width: 100px;
+}
+
+.about-me {
+    padding: 8px;
+    font-size: 1em;
+}
+
+@media (min-width: 500px) {
+    .about-me {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 535px) {
+    .contacts {
+        padding: 20px 50px;
+    }
+}
+
+@media (min-width: 700px) {
+    #container {
+        width: 600px;
+    }
+
+    .about-me {
+        padding: 15px;
+        font-size: 1.3em;
+    }
+}
